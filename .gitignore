@@ -12,9 +12,4 @@ build/
 .vscode/
 .idea/
 
-# Environment
-.env
-.env.local
-
-# Project specific
-assets/logo.png
+# End of ignore file
