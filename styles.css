@@ -132,14 +132,14 @@ img { max-width: 100%; display: block; }
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 30px 0; /* Aumentado de 20px para dar aire al logo más grande */
+    padding: 24px 0; /* Un poco menos de padding para compensar el logo mayor */
     transition: all 0.4s var(--ease);
     background: transparent;
 }
 
 .header--scrolled {
-    padding: 15px 0; /* Aumentado de 12px */
-    background: rgba(10,10,15,0.85);
+    padding: 12px 0;
+    background: rgba(10,10,15,0.92); /* Un poco más opaco para legibilidad */
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
@@ -163,13 +163,14 @@ img { max-width: 100%; display: block; }
 
 .header__logo-img {
     width: auto;
-    height: 80px; /* Tamaño mucho más imponente y legible */
+    height: 100px; /* Tamaño mucho más imponente */
+    max-height: 12vh;
     object-fit: contain;
     transition: height 0.4s var(--ease);
 }
 
 .header--scrolled .header__logo-img {
-    height: 60px; /* Se reduce un poco al scrollear para no estorbar */
+    height: 65px; 
 }
 
 .header__nav {
@@ -982,18 +983,22 @@ img { max-width: 100%; display: block; }
 /* REVEAL ANIMATIONS                               */
 /* =============================================== */
 
+/* Fallback de seguridad: Si el JS no carga, los elementos se muestran tras 3s */
+@keyframes reveal-fallback {
+    to { opacity: 1; transform: translateY(0); }
+}
 .reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+    animation: reveal-fallback 0.8s var(--ease) forwards;
+    animation-play-state: paused;
 }
 .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
+    animation-play-state: running;
 }
-.reveal:nth-child(2) { transition-delay: 0.1s; }
-.reveal:nth-child(3) { transition-delay: 0.2s; }
-.reveal:nth-child(4) { transition-delay: 0.3s; }
+
+/* Ocultar BRs en móviles para evitar espacios raros */
+@media (max-width: 768px) {
+    br { display: none; }
+}
 
 /* =============================================== */
 /* RESPONSIVE                                      */
@@ -1018,8 +1023,8 @@ img { max-width: 100%; display: block; }
     .footer__inner { flex-direction: column; text-align: center; }
     .footer__links { justify-content: center; }
 
-    .header__logo-img { height: 60px; } /* Logo más grande en móvil */
-    .header--scrolled .header__logo-img { height: 50px; }
+    .header__logo-img { height: 75px; } /* Tamaño móvil optimizado */
+    .header--scrolled .header__logo-img { height: 55px; }
 
     .hero__title br { display: none; }
     .section__title br { display: none; }

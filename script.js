@@ -56,7 +56,7 @@
                 revealObserver.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.01, rootMargin: '0px 0px -20px 0px' }); // Umbral más bajo para móviles
 
     document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
@@ -108,7 +108,8 @@
         let w, h;
         let particles = [];
         let animId;
-        const PARTICLE_COUNT = 50;
+        const isMobile = window.innerWidth <= 768;
+        const PARTICLE_COUNT = isMobile ? 25 : 45; // Menos partículas en móvil para ahorrar batería y CPU
 
         function resize() {
             w = canvas.width = canvas.offsetWidth;
@@ -132,17 +133,19 @@
         function drawParticles() {
             ctx.clearRect(0, 0, w, h);
 
-            // Connection lines
+            // Connection lines (limit distance on mobile for performance)
+            const maxDist = isMobile ? 120 : 180;
             for (let i = 0; i < particles.length; i++) {
                 for (let j = i + 1; j < particles.length; j++) {
                     const dx = particles[i].x - particles[j].x;
                     const dy = particles[i].y - particles[j].y;
-                    const dist = Math.sqrt(dx * dx + dy * dy);
-                    if (dist < 200) {
+                    const distSq = dx * dx + dy * dy; // Usar distancia al cuadrado para evitar Math.sqrt por cada par
+                    if (distSq < maxDist * maxDist) {
+                        const dist = Math.sqrt(distSq);
                         ctx.beginPath();
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);
-                        const alpha = (1 - dist / 200) * 0.06;
+                        const alpha = (1 - dist / maxDist) * 0.06;
                         ctx.strokeStyle = `rgba(0,102,255,${alpha})`;
                         ctx.lineWidth = 0.5;
                         ctx.stroke();
