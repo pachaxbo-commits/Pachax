@@ -163,14 +163,8 @@ img { max-width: 100%; display: block; }
 
 .header__logo-img {
     width: auto;
-    height: 36px;
+    height: 48px; /* Aumentado para mayor claridad */
     object-fit: contain;
-}
-
-.header__logo-text {
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
 }
 
 .header__nav {
@@ -927,8 +921,11 @@ img { max-width: 100%; display: block; }
     align-items: center;
     gap: 10px;
 }
-.footer__logo-img { height: 28px; width: auto; object-fit: contain; }
-.footer__name { font-weight: 700; font-size: 16px; }
+.footer__logo-img { 
+    height: 36px; /* Aumentado para mayor claridad */
+    width: auto; 
+    object-fit: contain; 
+}
 
 .footer__copy {
     font-size: 13px;
