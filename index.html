@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pachax — Sistemas digitales que hacen crecer tu negocio</title>
+    <meta name="description"
+        content="Software, automatización y marketing digital en un solo equipo. Creamos sistemas que generan ingresos reales para tu negocio.">
+    <meta name="theme-color" content="#0a0a0f">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="#" class="header__logo" aria-label="Pachax Home">
+                <img src="assets/logo.png" alt="Pachax Logo" class="header__logo-img">
+                <span class="header__logo-text">Pachax</span>
+            </a>
+            <nav class="header__nav" id="main-nav">
+                <a href="#servicios" class="header__link">Servicios</a>
+                <a href="#resultados" class="header__link">Resultados</a>
+                <a href="#proceso" class="header__link">Proceso</a>
+                <a href="#contacto" class="header__link">Contacto</a>
+            </nav>
+            <a href="https://wa.me/+59177987776?text=Hola%2C%20vi%20la%20web%20de%20Pachax%20y%20quiero%20informaci%C3%B3n%20para%20hacer%20crecer%20mi%20negocio"
+                class="btn btn--primary btn--sm header__cta" target="_blank" rel="noopener">Contactar</a>
+            <button class="header__burger" id="burger-btn" aria-label="Abrir menú"
+                aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <nav class="mobile-nav__inner">
+            <a href="#servicios" class="mobile-nav__link">Servicios</a>
+            <a href="#resultados" class="mobile-nav__link">Resultados</a>
+            <a href="#proceso" class="mobile-nav__link">Proceso</a>
+            <a href="#contacto" class="mobile-nav__link">Contacto</a>
+            <a href="https://wa.me/+59177987776?text=Hola%2C%20vi%20la%20web%20de%20Pachax%20y%20quiero%20informaci%C3%B3n%20para%20hacer%20crecer%20mi%20negocio"
+                class="btn btn--primary mobile-nav__cta" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="hero">
+            <canvas class="hero__canvas" id="hero-canvas"></canvas>
+            <div class="hero__glow hero__glow--1"></div>
+            <div class="hero__glow hero__glow--2"></div>
+            <div class="container hero__content">
+                <div class="hero__badge reveal"><span class="hero__badge-dot"></span>Partner tecnológico para negocios
+                    en crecimiento</div>
+                <h1 class="hero__title reveal">Creamos sistemas digitales<br><span class="gradient-text">que hacen
+                        crecer tu negocio</span></h1>
+                <p class="hero__subtitle reveal">Software, automatización y marketing en un solo equipo</p>
+                <div class="hero__actions reveal">
+                    <a href="https://wa.me/+59177987776?text=Hola%2C%20vi%20la%20web%20de%20Pachax%20y%20quiero%20informaci%C3%B3n%20para%20hacer%20crecer%20mi%20negocio"
+                        class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        Hablar por WhatsApp
+                    </a>
+                    <a href="#proceso" class="btn btn--ghost btn--lg">Ver cómo trabajamos <svg width="16" height="16"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17l9.2-9.2M17 17V7H7" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="hero__scroll-indicator">
+                <div class="hero__scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- CLIENT LOGOS TICKER (SOCIAL PROOF)          -->
+        <!-- ═══════════════════════════════════════════ -->
+        <section class="logos-ticker">
+            <div class="logos-ticker__container">
+                <div class="logos-ticker__wrapper">
+                    <!-- Primera tanda de logos -->
+                    <div class="logos-ticker__slide">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Client 1">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Client 2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="Client 3">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Client 4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Client 5">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Client 6" style="filter: invert(1);">
+                    </div>
+                    <!-- Duplicado para el efecto infinito -->
+                    <div class="logos-ticker__slide">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Client 1">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Client 2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="Client 3">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Client 4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Client 5">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Client 6" style="filter: invert(1);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLIENT FILTER -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-card reveal">
+                    <div class="filter-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
+                        </svg></div>
+                    <p class="filter-card__text">Trabajamos con negocios que <strong>ya venden</strong> y quieren
+                        escalar.</p>
+                    <p class="filter-card__sub">Si tienes un negocio en marcha y quieres sistematizar su crecimiento,
+                        estás en el lugar correcto.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEMS -->
+        <section class="section problems" id="problemas">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__label">El problema</span>
+                    <h2 class="section__title">Tu negocio crece,<br><span class="gradient-text">tus sistemas no</span>
+                    </h2>
+                    <p class="section__desc">Estos problemas frenan el crecimiento de negocios que ya facturan</p>
+                </div>
+                <div class="problems__grid">
+                    <div class="problem-card reveal">
+                        <div class="problem-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg></div>
+                        <h3 class="problem-card__title">Procesos manuales</h3>
+                        <p class="problem-card__desc">Horas perdidas en tareas repetitivas que podrían automatizarse y
+                            liberar tu tiempo.</p>
+                    </div>
+                    <div class="problem-card reveal">
+                        <div class="problem-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <line x1="23" y1="11" x2="17" y2="11" />
+                            </svg></div>
+                        <h3 class="problem-card__title">Leads que se pierden</h3>
+                        <p class="problem-card__desc">Clientes potenciales que llegan pero no se capturan, no se nutren,
+                            no se convierten.</p>
+                    </div>
+                    <div class="problem-card reveal">
+                        <div class="problem-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                            </svg></div>
+                        <h3 class="problem-card__title">Sistemas ineficientes</h3>
+                        <p class="problem-card__desc">Herramientas desconectadas, datos dispersos, procesos que no
+                            escalan.</p>
+                    </div>
+                    <div class="problem-card reveal">
+                        <div class="problem-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5">
+                                <polyline points="23 4 23 10 17 10" />
+                                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
+                            </svg></div>
+                        <h3 class="problem-card__title">Falta de automatización</h3>
+                        <p class="problem-card__desc">Sin flujos automáticos, tu equipo repite lo mismo una y otra vez.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLUTION -->
+        <section class="section solution">
+            <div class="container">
+                <div class="solution__card reveal">
+                    <span class="section__label">La solución</span>
+                    <h2 class="solution__title">En Pachax creamos sistemas que <span class="gradient-text">automatizan
+                            ventas</span>, optimizan procesos y generan <span class="gradient-text">crecimiento
+                            real</span>.</h2>
+                    <p class="solution__desc">No somos una agencia tradicional. Somos tu partner tecnológico —
+                        construimos la infraestructura digital que tu negocio necesita para escalar.</p>
+                    <div class="solution__features">
+                        <div class="solution__feature"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="var(--accent)" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg><span>Sistemas que generan ingresos</span></div>
+                        <div class="solution__feature"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="var(--accent)" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg><span>Automatización inteligente</span></div>
+                        <div class="solution__feature"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="var(--accent)" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg><span>Un solo equipo, todo integrado</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="section services" id="servicios">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__label">Servicios</span>
+                    <h2 class="section__title">Todo lo que necesitas para escalar,<br><span class="gradient-text">en un
+                            solo lugar</span></h2>
+                </div>
+                <div class="services__grid">
+                    <div class="service-card reveal">
+                        <div class="service-card__glow"></div>
+                        <div class="service-card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                stroke="var(--accent)" stroke-width="1.5">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg></div>
+                        <h3 class="service-card__title">Desarrollo de Software</h3>
+                        <p class="service-card__desc">Construimos plataformas y sistemas a medida que trabajan por ti
+                            24/7.</p>
+                        <ul class="service-card__list">
+                            <li>Sistemas a medida</li>
+                            <li>Plataformas SaaS</li>
+                            <li>Aplicaciones web</li>
+                            <li>Paneles de control</li>
+                        </ul>
+                    </div>
+                    <div class="service-card service-card--featured reveal">
+                        <div class="service-card__glow"></div>
+                        <div class="service-card__badge">Más popular</div>
+                        <div class="service-card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                stroke="var(--accent)" stroke-width="1.5">
+                                <line x1="18" y1="20" x2="18" y2="10" />
+                                <line x1="12" y1="20" x2="12" y2="4" />
+                                <line x1="6" y1="20" x2="6" y2="14" />
+                            </svg></div>
+                        <h3 class="service-card__title">Marketing Digital</h3>
+                        <p class="service-card__desc">Estrategias de adquisición que generan leads calificados y ventas
+                            reales.</p>
+                        <ul class="service-card__list">
+                            <li>Meta Ads & Google Ads</li>
+                            <li>Embudos de conversión</li>
+                            <li>Landing pages</li>
+                            <li>Estrategia de contenidos</li>
+                        </ul>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-card__glow"></div>
+                        <div class="service-card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                stroke="var(--accent)" stroke-width="1.5">
+                                <path
+                                    d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83" />
+                            </svg></div>
+                        <h3 class="service-card__title">Automatización</h3>
+                        <p class="service-card__desc">Conectamos todas tus herramientas para que tu negocio funcione en
+                            piloto automático.</p>
+                        <ul class="service-card__list">
+                            <li>CRM personalizado</li>
+                            <li>Bots de atención</li>
+                            <li>Integraciones</li>
+                            <li>Flujos automáticos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESULTS -->
+        <section class="section results" id="resultados">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__label">Resultados</span>
+                    <h2 class="section__title">Números que hablan<br><span class="gradient-text">por nosotros</span>
+                    </h2>
+                </div>
+                <div class="results__grid">
+                    <div class="result-card reveal">
+                        <div class="result-card__value">+<span class="counter" data-target="200">0</span>%</div>
+                        <p class="result-card__label">En conversiones promedio para nuestros clientes</p>
+                        <div class="result-card__bar">
+                            <div class="result-card__bar-fill" style="--fill-width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="result-card reveal">
+                        <div class="result-card__value">+<span class="counter" data-target="100">0</span></div>
+                        <p class="result-card__label">Clientes nuevos generados con nuestros sistemas</p>
+                        <div class="result-card__bar">
+                            <div class="result-card__bar-fill" style="--fill-width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="result-card reveal">
+                        <div class="result-card__value">&lt;<span class="counter" data-target="90">0</span> días</div>
+                        <p class="result-card__label">Para implementar automatización completa</p>
+                        <div class="result-card__bar">
+                            <div class="result-card__bar-fill" style="--fill-width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section class="section process" id="proceso">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__label">Proceso</span>
+                    <h2 class="section__title">Cómo llevamos tu negocio<br><span class="gradient-text">al siguiente
+                            nivel</span></h2>
+                </div>
+                <div class="process__timeline">
+                    <div class="process__line"></div>
+                    <div class="process-step reveal">
+                        <div class="process-step__number">01</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Diagnóstico</h3>
+                            <p class="process-step__desc">Analizamos tu negocio, identificamos oportunidades y definimos
+                                prioridades de alto impacto.</p>
+                        </div>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="process-step__number">02</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Estrategia</h3>
+                            <p class="process-step__desc">Diseñamos un plan a medida con tecnología, automatización y
+                                marketing alineados a tus objetivos.</p>
+                        </div>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="process-step__number">03</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Implementación</h3>
+                            <p class="process-step__desc">Construimos, conectamos y desplegamos los sistemas. Todo listo
+                                para operar.</p>
+                        </div>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="process-step__number">04</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Escalado</h3>
+                            <p class="process-step__desc">Optimizamos, medimos y escalamos. Tu negocio crece con datos,
+                                no con suposiciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="section cta-section" id="contacto">
+            <div class="container">
+                <div class="cta-card reveal">
+                    <div class="cta-card__glow"></div>
+                    <h2 class="cta-card__title">Hablemos de cómo<br><span class="gradient-text">escalar tu
+                            negocio</span></h2>
+                    <p class="cta-card__desc">Envíanos un mensaje y cuéntanos sobre tu negocio. Sin compromiso, sin
+                        presión — solo una conversación estratégica.</p>
+                    <a href="https://wa.me/+59177987776?text=Hola%2C%20vi%20la%20web%20de%20Pachax%20y%20quiero%20informaci%C3%B3n%20para%20hacer%20crecer%20mi%20negocio"
+                        class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        Hablar por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <img src="assets/logo.png" alt="Pachax Logo" class="footer__logo-img">
+                <span class="footer__name">Pachax</span>
+            </div>
+            <p class="footer__copy">&copy; 2026 Pachax. Todos los derechos reservados.</p>
+            <div class="footer__links"><a href="#servicios">Servicios</a><a href="#resultados">Resultados</a><a
+                    href="#proceso">Proceso</a><a href="#contacto">Contacto</a></div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/+59177987776?text=Hola%2C%20vi%20la%20web%20de%20Pachax%20y%20quiero%20informaci%C3%B3n%20para%20hacer%20crecer%20mi%20negocio"
+        class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat en WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
